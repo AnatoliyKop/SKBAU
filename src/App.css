@@ -1,56 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
-.float-start img {
-    box-shadow: 10px 10px rgba(60, 69, 67, 0.6);
-}
-
-.btn-danger {
-    background-color: rgba(204, 3, 35, 0.5);
-    border: 2px solid black;
-}
-
-.border {
-    border-color: #eedb00 !important;
-}
-
-.gradient {
+body {
     font-family: "Open Sans", sans-serif;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    line-height: 1.1;
-    letter-spacing: 1.5px;
+    background-color: #454a4a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: antiquewhite;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- Header --- */
+header {
+    background-color: rgba(60, 69, 67, 0.8);
+    padding: 1rem 2rem;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    white-space: nowrap;
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: antiquewhite;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .btn {
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(204, 3, 35, 0.5);
+    transition: all 0.3s ease;
+}
+
+.nav-item .btn:hover {
+    background-color: rgba(204, 3, 35, 0.8);
+    transform: translateY(-2px);
+}
+
+/* --- Gradient text --- */
+.gradient {
     background: linear-gradient(to bottom, #e37d00, rgba(62, 47, 47, 0.84));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    white-space: normal;
-    word-wrap: break-word;
-    max-width: 100%;
 }
 
+/* --- Main Content --- */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 6rem 2rem 2rem 2rem;
     text-align: center;
-    padding: 6rem 2rem 2rem 2rem; /* отступ сверху чтобы не перекрывало header */
-    min-height: calc(100vh - 12em); /* вычитаем высоту header+footer */
+    min-height: calc(100vh - 12em);
 }
 
 .main-content h2 {
     font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 1rem;
 }
 
 .main-content p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    max-width: 800px;
-}
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+/* --- Footer --- */
+footer {
+    background-color: rgba(60, 69, 67, 0.6);
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
 }
