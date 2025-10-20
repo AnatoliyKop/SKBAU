@@ -1,0 +1,48 @@
+
+.float-start img {
+    box-shadow: 10px 10px rgba(60, 69, 67, 0.6);
+}
+
+.btn-danger {
+    background-color: rgba(204, 3, 35, 0.5);
+    border: 2px solid black;
+}
+
+.border {
+    border-color: #eedb00 !important;
+}
+
+.gradient {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    background: linear-gradient(to bottom, #e37d00, rgba(62, 47, 47, 0.84));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem 2rem 2rem; /* отступ сверху чтобы не перекрывало header */
+    min-height: calc(100vh - 12em); /* вычитаем высоту header+footer */
+}
+
+.main-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 800px;
+}
