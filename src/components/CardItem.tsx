@@ -1,5 +1,6 @@
+import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import type { CardData } from "../utils/typs.ts";
-import { Button, Card } from "react-bootstrap";
 
 const CardItem = ({ title, description, link }: CardData) => {
     return (
@@ -9,9 +10,11 @@ const CardItem = ({ title, description, link }: CardData) => {
                     <Card.Title className="gradient">{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                 </div>
-                <Button variant="warning" href={link}>
-                    Mehr erfahren
-                </Button>
+                <Link to={link}>
+                    <Button variant="warning" className="mt-2 w-100">
+                        Mehr erfahren
+                    </Button>
+                </Link>
             </Card.Body>
         </Card>
     );

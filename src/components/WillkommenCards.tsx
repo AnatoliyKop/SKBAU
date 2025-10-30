@@ -1,5 +1,5 @@
 import CardItem from "./CardItem.tsx";
-import {cardData} from "../utils/constants.ts";
+import { cardData } from "../utils/constants.ts";
 
 const WillkommenCards = () => {
     return (

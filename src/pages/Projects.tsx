@@ -1,3 +1,5 @@
+import ColorBeforeAfterDrag from "../components/ColorBeforeAfterDrag.tsx";
+
 const Projects = () => {
     return (
         <section className="page container py-5">
@@ -5,6 +7,8 @@ const Projects = () => {
             <p className="lead text-center mb-5">
                 Sehen Sie einige unserer erfolgreich abgeschlossenen Bauprojekte.
             </p>
+
+            <ColorBeforeAfterDrag/>
 
             <div className="row g-4">
                 {[1, 2, 3, 4].map((n) => (

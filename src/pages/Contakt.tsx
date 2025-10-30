@@ -3,7 +3,8 @@ const Contact = () => {
         <section className="page container py-5">
             <h2 className="gradient text-center mb-4">Kontakt</h2>
             <p className="lead text-center mb-5">
-                Kontaktieren Sie uns für ein kostenloses Angebot oder eine Beratung.
+                Kontaktieren Sie uns für ein kostenloses Angebot oder eine persönliche Beratung.
+                Egal welche Arbeiten – wir erledigen sie professionell und zuverlässig.
             </p>
 
             <div className="row justify-content-center">
@@ -24,13 +25,20 @@ const Contact = () => {
                         </div>
 
                         <div className="mb-3">
+                            <label htmlFor="phone" className="form-label">
+                                Telefonnummer
+                            </label>
+                            <input type="tel" id="phone" className="form-control" placeholder="+49 123 4567890" />
+                        </div>
+
+                        <div className="mb-3">
                             <label htmlFor="message" className="form-label">
                                 Ihre Nachricht
                             </label>
                             <textarea id="message" className="form-control" rows={4}></textarea>
                         </div>
 
-                        <button type="submit" className="btn btn-danger">
+                        <button type="submit" className="btn btn-danger w-100">
                             Senden
                         </button>
                     </form>
