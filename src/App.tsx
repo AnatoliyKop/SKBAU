@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services.tsx";
 import Projects from "./pages/Projects.tsx";
 import Contact from "./pages/Contakt.tsx";
+import {bauProjects} from "./utils/constants.ts";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
                         <Route path="/" element={<Main />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/services" element={<Services />} />
-                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/projects" element={<Projects bauProjects={bauProjects} />} />
                         <Route path="/contacts" element={<Contact />} />
                     </Routes>
                 </main>
