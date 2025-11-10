@@ -1,0 +1,175 @@
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.smooth-container {
+    position: relative;
+    width:600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.after {
+    transition: mask-image 0.15s ease, -webkit-mask-image 0.15s ease;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* дорожка */
+.slider-track {
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background: #ddd;
+    border-radius: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+/* заполнение до ползунка */
+.slider-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff9900, #ffcc33);
+    border-radius: 7px 0 0 7px;
+    transition: width 0.15s ease;
+}
+
+/* сам input range поверх */
+.custom-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* ползунок */
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 28px;
+    border-radius: 14px;
+    background: #ffcc33;
+    border: 2px solid #e37d00;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    margin-top: -7px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.custom-slider::-moz-range-thumb {
+    width: 40px;
+    height: 28px;
+    border-radius: 14px;
+    background: #fff;
+    border: 2px solid #ff9900;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.custom-slider::-webkit-slider-runnable-track {
+    height: 14px;
+    background: transparent;
+}
+.project-slider {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.arrow {
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    padding: 5rem 2rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.dots {
+    margin-top: 10px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dots span.active {
+    background: #fff;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+.project-card {
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card.active {
+    transform: scale(1.05);
+    border: 2px solid orange;
+}

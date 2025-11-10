@@ -1,16 +1,15 @@
+import WillkommenCards from "./WillkommenCards.tsx";
+
 const Main = () => {
     return (
-        <main className="main-content">
-            <h2>Wilkommen bei SKBAU Service24</h2>
-            <p>
-                Willkommen bei SKBAU Service24 – Ihrem Experten für hochwertige Renovierungen und Bauarbeiten!
+        <main className="main-content text-center py-5">
+            <h2 className="mb-3 gradient">Willkommen bei SKBAU Service24</h2>
+            <img src="../../public/logo-wbg.png" alt={"logo"}/>
+            <p className="lead mb-5">
+                Ihr Experte für hochwertige Renovierungen und Bauarbeiten in Deutschland.
             </p>
-            <div className="mt-4">
-                <button className="btn btn-danger mx-2">Mehr erfahren</button>
-                <button className="btn btn-danger mx-2">Kontakt</button>
-            </div>
-        </main>
-    );
+            <WillkommenCards />
+        </main>)
 };
 
 export default Main;
