@@ -15,3 +15,17 @@ export interface ChangesPhoto{
     before: string;
     after: string;
 }
+export interface InputFieldProps{
+    label: string;
+    type: string;
+    name: string;
+    placeholder: string;
+    required?: boolean;
+}
+export interface TextAreaFieldProps {
+    label: string;
+    name: string;
+    rows?: number;
+    placeholder?: string;
+    required?: boolean;
+}
