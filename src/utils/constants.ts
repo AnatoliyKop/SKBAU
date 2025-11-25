@@ -1,5 +1,6 @@
 import type {CardData, ProjectData} from "./typs.ts";
 
+export const logo="../../public/logo-wbg.png"
 export const navItems = ["Leistungen", "Projekte", "Über uns", "Kontakt"]
 export const navLinks: Record<string, string> = {
     "Über uns": "/about",
