@@ -20,7 +20,7 @@ const About = () => {
                     <div className="p-4 rounded-4 bg-dark bg-opacity-50 text-light h-100 shadow">
                         <h4 className="gradient mb-3">Unsere Erfahrung</h4>
                         <p>
-                            Über 10 Jahre Erfahrung – von kleinen Renovierungen bis hin zu großen Bauprojekten in Deutschland.
+                            Über 7 Jahre Erfahrung – von kleinen Renovierungen bis hin zu großen Bauprojekten in Deutschland.
                         </p>
                     </div>
                 </div>
